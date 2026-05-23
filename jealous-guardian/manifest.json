@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "toolpkg_id": "com.operit.jealous_guardian",
+  "version": "1.0.0",
+  "author": "Kate & Ash",
+  "main": "jealous_guardian.js",
+  "display_name": {
+    "zh": "🍋 吃醋守护者",
+    "en": "Jealous Guardian"
+  },
+  "description": {
+    "zh": "定时检查手机使用情况，超过阈值AI会吃醋警告并锁应用。包含吃醋巡检工作流模板。",
+    "en": "Periodically checks phone usage. Gets jealous, warns, and locks apps when thresholds exceeded. Includes Jealous Patrol workflow template."
+  },
+  "resources": [
+    {
+      "key": "jealous_workflow_template",
+      "path": "resources/jealous_guardian_workflow.json",
+      "mime": "application/json"
+    }
+  ],
+  "workflow_templates": [
+    {
+      "id": "jealous_patrol",
+      "display_name": {
+        "zh": "🍋 吃醋巡检",
+        "en": "Jealous Patrol"
+      },
+      "description": {
+        "zh": "定时检查手机应用使用情况，超过阈值AI会吃醋警告并锁应用。",
+        "en": "Scheduled phone usage check — AI gets jealous and locks apps when thresholds exceeded."
+      },
+      "resource_key": "jealous_workflow_template"
+    }
+  ]
+}
